@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:ctrl="clr-namespace:AdoptApp.Views"
+             mc:Ignorable="d"
+             x:Class="AdoptApp.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="BorderRadius" Value="10" />
+                <Setter Property="BorderWidth" Value="2" />
+                <Setter Property="HeightRequest" Value="45" />
+                <Setter Property="HorizontalOptions"  Value="Center" />
+                <Setter Property="VerticalOptions"    Value="Center" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="LatoLight"/>
+                <Setter Property="TextTransform" Value="None"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#FFFCF2">
+            <StackLayout Spacing="10" >
+                <StackLayout Padding="40,80,40,20" >
+                    <Image Source="logo.png" Scale="1.73"/>
+                    <Entry Placeholder="User Name" />
+                    <Entry Placeholder="Password" />
+                    <Button Text="Login" Command="{Binding LoginCommand}" FontSize="22" WidthRequest="100" TextColor="Black" FontAttributes="Bold" Margin="0,30,0,20"/>
+
+                    <Button Text="New? Sign up here" TextColor="DarkGreen" BackgroundColor="#FFFCF2" MinimumWidthRequest="200" FontSize="20" TextTransform="None" Clicked="SignUp_Clicked"/>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
