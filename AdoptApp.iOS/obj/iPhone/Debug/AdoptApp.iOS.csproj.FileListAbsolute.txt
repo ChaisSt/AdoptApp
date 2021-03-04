@@ -2,6 +2,8 @@ C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp.
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp.iOS\bin\iPhone\Debug\AdoptApp.iOS.pdb
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp.iOS\bin\iPhone\Debug\SQLite-net.dll
+C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp.iOS\bin\iPhone\Debug\SQLite.Net.Platform.XamarinIOS.Unified.dll
+C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp.iOS\bin\iPhone\Debug\SQLite.Net.dll
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp.iOS\bin\iPhone\Debug\SQLiteNetExtensions.dll
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp.iOS\bin\iPhone\Debug\SQLiteNetExtensions.pdb
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp.iOS\bin\iPhone\Debug\SQLitePCLRaw.batteries_v2.dll

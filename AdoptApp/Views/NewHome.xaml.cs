@@ -21,12 +21,18 @@ namespace AdoptApp.Views
                 this.BindingContext = new NewHomeViewModel();
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
             }
         }
-        public void CreateWorker(object sender, EventArgs e)
+
+        private void BackButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+        }
+
+        private void CreateHome(object sender, EventArgs e)
         {
             Navigation.PushAsync(new LoginPage());
         }

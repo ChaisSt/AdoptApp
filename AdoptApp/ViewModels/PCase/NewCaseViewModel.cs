@@ -36,20 +36,6 @@ namespace AdoptApp.ViewModels
         public Command btnSaveCase { get; set; }
         public Command btnClearCase { get; set; }
 
-        //private string caseWorkerId;
-        //private string caseNum;
-        //private string pic;
-        //private string description;
-        //private int group;
-        //private string name;
-        //private string age;
-        //private string gender;
-        //private string state;
-        //private string race;
-        //private string language;
-        //private string bio;
-        //private string interests;
-
         public NewCaseViewModel()
         {
             child = new Case();

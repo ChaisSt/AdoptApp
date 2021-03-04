@@ -9,10 +9,11 @@ namespace AdoptApp.Models
     [Table("CaseWorkers")]
     public class CaseWorker
     {
-        [AutoIncrement]
-        public int Id { get; set; }
-        [PrimaryKey]
+        [Unique]
         public string CaseWorkerId { get; set; }
+
+        [PrimaryKey, AutoIncrement]
+        public int WorkerId { get; set; }
         public string Agency { get; set; }
         [Unique]
         public string UserName { get; set; }

@@ -9,11 +9,11 @@ namespace AdoptApp.Models
     [Table("Homes")]
     public class Home
     {
-        [AutoIncrement]
-        public int Id { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int HomeId { get; set; }
         [ForeignKey(typeof(Family))]
         public string UserName { get; set; }
-        [PrimaryKey]
+        [Unique]
         public string Address { get; set; }
         public string Type { get; set; }
         public string Owned { get; set; }

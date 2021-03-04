@@ -9,9 +9,9 @@ namespace AdoptApp.Models
     [Table("Cases")]
     public class Case
     {
-        [AutoIncrement]
-        public int Id { get; set; }
-        [PrimaryKey]
+        [PrimaryKey, AutoIncrement]
+        public int CaseId { get; set; }
+        [Unique]
         public string CaseNum { get; set; }
         [ForeignKey(typeof(CaseWorker))] 
         public string CaseWorkerId { get; set; }

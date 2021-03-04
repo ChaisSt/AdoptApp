@@ -19,6 +19,9 @@ namespace AdoptApp.Views
             this.BindingContext = new LoginViewModel();
         }
 
+        public string UserName { get; internal set; }
+        public string Password { get; internal set; }
+
         private void SignUp_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new SignUp());

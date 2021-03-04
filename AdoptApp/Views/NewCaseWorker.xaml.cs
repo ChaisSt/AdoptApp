@@ -26,10 +26,12 @@ namespace AdoptApp.Views
 
             }
         }
+
         public void CreateWorker(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new LoginPage());
         }
+
         private void BackButton_Clicked(object sender, EventArgs e)
         {
             Navigation.PopAsync();

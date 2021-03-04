@@ -31,7 +31,7 @@ namespace AdoptApp.Views
 
         private async void btnNewCase_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new NewCase());
+            await Shell.Current.GoToAsync($"//{nameof(NewCase)}");
         }
     }
 }

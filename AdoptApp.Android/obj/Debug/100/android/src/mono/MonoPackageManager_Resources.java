@@ -8,6 +8,8 @@ public class MonoPackageManager_Resources {
 		"ImageCircle.Forms.Plugin.dll",
 		"Newtonsoft.Json.dll",
 		"SQLite-net.dll",
+		"SQLite.Net.dll",
+		"SQLite.Net.Platform.XamarinAndroid.dll",
 		"SQLiteNetExtensions.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",

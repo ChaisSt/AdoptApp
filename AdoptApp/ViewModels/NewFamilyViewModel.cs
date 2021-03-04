@@ -11,6 +11,17 @@ namespace AdoptApp.ViewModels
 {
     class NewFamilyViewModel : INotifyPropertyChanged
     {
+        private Login _login { get; set; }
+        public Login login
+        {
+            get { return _login; }
+            set
+            {
+                _login = value;
+                OnPropertyChanged();
+            }
+        }
+
         private Family _family { get; set; }
         public Family family
         {
@@ -36,28 +47,6 @@ namespace AdoptApp.ViewModels
         public Command btnSaveFamily { get; set; }
         public Command btnClearFamily { get; set; }
 
-        //private string userName;
-        //private string password;
-        //private string email;
-
-        //private string license;
-        //private string agency;
-
-        //private string pic;
-        //private string name;
-        //private string occupation;
-        //private string languages;
-        //private string phone;
-        //private string city;
-        //private string state;
-        //private string children;
-        //private string pets;
-
-        //private string description;
-        //private string bio;
-        //private string interests;
-
-
         public NewFamilyViewModel()
         {
             family = new Family();
@@ -82,6 +71,11 @@ namespace AdoptApp.ViewModels
             family.Bio = "";
             family.Interests = "";
 
+            login = new Login();
+            login.AcctType = "Family";
+            login.UserName = family.UserName;
+            login.Password = family.Password;
+
             lblInfo = "";
             btnSaveFamily = new Command(SaveFamily);
             btnClearFamily = new Command(ClearFamily);
@@ -93,8 +87,9 @@ namespace AdoptApp.ViewModels
             {
                 AdoptDatabase adoptDatabase = new AdoptDatabase();
                 int i = adoptDatabase.SaveFamily(family).Result;
+                int l = adoptDatabase.SaveLogin(login).Result;
 
-                if (i == 1)
+                if (i == 1 && l == 1)
                 {
                     ClearFamily();
                     lblInfo = "User Saved Successfully.";
@@ -132,6 +127,10 @@ namespace AdoptApp.ViewModels
             family.Description = "";
             family.Bio = "";
             family.Interests = "";
+
+            login.AcctType = "";
+            login.Password = "";
+            login.UserName = "";
 
             lblInfo = "";
         }

@@ -2,12 +2,12 @@ C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\bin\Debug\netstandard2.0\AdoptApp.dll
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\bin\Debug\netstandard2.0\ref\AdoptApp.dll
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\bin\Debug\netstandard2.0\AdoptApp.pdb
-C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\AdoptApp.csprojAssemblyReference.cache
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\AdoptList.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Case.xaml.g.cs
+C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\FamilyList.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Initial\ItemDetailPage.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Initial\ItemsPage.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Initial\NewItemPage.xaml.g.cs
@@ -18,13 +18,14 @@ C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\NewFamily.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\NewHome.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Profiles\CaseWorker\AddEditCase.xaml.g.cs
-C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Profiles\CaseWorker\CaseWorkerProfile.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Profiles\CaseWorker\ViewCases.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Profiles\Case\BrowsePage.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Profiles\Case\CaseProfile.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Profiles\Parent\FavList.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Profiles\Parent\ParentProfile.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\Tools\FormContainer.xaml.g.cs
+C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\WorkerList.xaml.g.cs
+C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\Views\WorkerProfile.xaml.g.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\AdoptApp.AssemblyInfoInputs.cache
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\AdoptApp.AssemblyInfo.cs
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\AdoptApp.csproj.CoreCompileInputs.cache
@@ -32,3 +33,4 @@ C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\AdoptApp.dll
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\ref\AdoptApp.dll
 C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\AdoptApp.pdb
+C:\Users\chais.strand\Documents\CIS293 Advanced Tech\AdoptApp\AdoptApp\AdoptApp\obj\Debug\netstandard2.0\AdoptApp.csprojAssemblyReference.cache

@@ -41,6 +41,7 @@ namespace AdoptApp.Views
 
             (sender as Button).IsEnabled = true;
         }
+
         private void BackButton_Clicked(object sender, EventArgs e)
         {
             Navigation.PopAsync();

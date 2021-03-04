@@ -9,16 +9,15 @@ namespace AdoptApp.Models
     [Table("Families")]
     public class Family
     {
-        [AutoIncrement]
-        public int Id { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int FamilyId { get; set; }
 
         [Unique]
         public string UserName { get; set; }
         public string Password { get; set; }
         [Unique]
         public string Email { get; set; }
-
-        [PrimaryKey]
+        [Unique]
         public string License { get; set; }
         public string Agency { get; set; }
 

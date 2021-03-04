@@ -26,12 +26,13 @@
             <StackLayout Spacing="10" >
                 <StackLayout Padding="40,80,40,20" >
                     <Image Source="logo.png" Scale="1.73"/>
-                    <Entry Placeholder="User Name" />
-                    <Entry Placeholder="Password" />
+                    <Entry Text="{Binding login.UserName}" Placeholder="User Name" />
+                    <Entry Text="{Binding login.Password}" Placeholder="Password" />
                     <Button Text="Login" Command="{Binding LoginCommand}" FontSize="22" WidthRequest="100" TextColor="Black" FontAttributes="Bold" Margin="0,30,0,20"/>
 
                     <Button Text="New? Sign up here" TextColor="DarkGreen" BackgroundColor="#FFFCF2" MinimumWidthRequest="200" FontSize="20" TextTransform="None" Clicked="SignUp_Clicked"/>
 
+                    <Label Text="{Binding lblInfo}" Margin="15,10,15,0"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

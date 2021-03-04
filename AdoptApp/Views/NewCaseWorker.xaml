@@ -43,6 +43,8 @@
                         <StackLayout>
                             <Label Text="Create Login" FontSize="26" Margin="2" Padding="0,0,0,10"/>
 
+                            <Entry Text="{Binding caseWorker.Id}" Margin="0" FontSize="1" IsVisible="false" HorizontalOptions="FillAndExpand"/>
+                            
                             <Label Text="Username:" Margin="2"/>
                             <Entry Text="{Binding caseWorker.UserName}" Margin="2,2,2,5" HorizontalOptions="FillAndExpand"/>
 
@@ -57,8 +59,7 @@
                         <StackLayout VerticalOptions="FillAndExpand">
                             <Label Text="License Information" FontSize="26" Margin="2" Padding="0,0,0,10"/>
 
-                            <Entry Text="{Binding caseWorker.Id}" Margin="0" FontSize="1" IsVisible="false" HorizontalOptions="FillAndExpand"/>
-
+                            
                             <Label Text="Full Name:" Margin="2"/>
                             <Entry Text="{Binding caseWorker.Name}" Margin="2,2,2,5" HorizontalOptions="FillAndExpand"/>
 

@@ -22,6 +22,17 @@ namespace AdoptApp.ViewModels
             }
         }
 
+        private Login _login { get; set; }
+        public Login login
+        {
+            get { return _login; }
+            set
+            {
+                _login = value;
+                OnPropertyChanged();
+            }
+        }
+
         private string _lblInfo { get; set; }
         public string lblInfo
         {
@@ -56,6 +67,12 @@ namespace AdoptApp.ViewModels
             caseWorker.Name = "";
             caseWorker.City = "";
             caseWorker.State = "";
+
+            login = new Login();
+            login.AcctType = "Worker";
+            login.UserName = caseWorker.UserName;
+            login.Password = caseWorker.Password;
+
             lblInfo = "";
             btnSaveWorker = new Command(SaveCaseWorker);
             btnClearWorker = new Command(ClearCaseWorker);
@@ -67,8 +84,9 @@ namespace AdoptApp.ViewModels
             {
                 AdoptDatabase adoptDatabase = new AdoptDatabase();
                 int i = adoptDatabase.SaveCaseWorker(caseWorker).Result;
+                int l = adoptDatabase.SaveLogin(login).Result;
 
-                if (i == 1)
+                if (i == 1 && l == 1)
                 {
                     ClearCaseWorker();
                     lblInfo = "Caseworker Saved Successfully.";
@@ -94,6 +112,11 @@ namespace AdoptApp.ViewModels
             caseWorker.Name = "";
             caseWorker.City = "";
             caseWorker.State = "";
+
+            login = new Login();
+            login.AcctType = "";
+            login.UserName = "";
+            login.Password = "";
             lblInfo = "";
         }
 
