@@ -6,6 +6,7 @@
              xmlns:ctrl="clr-namespace:AdoptApp.Views"
              mc:Ignorable="d"
              x:Class="AdoptApp.Views.LoginPage"
+             IconImageSource="logOut.png"
              Shell.NavBarIsVisible="False">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -22,7 +23,11 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ScrollView BackgroundColor="#FFFCF2">
+        <StackLayout BackgroundColor="#FFFCF2">
+            <Frame BackgroundColor="{StaticResource Primary}" HeightRequest="18" Margin="0,-10,0,-6" HasShadow="True" >
+                <Label Text="Login" FontFamily="LatoReg" FontSize="22" Padding="-6,0,0,0" Margin="0,0,0,-8" TextColor="WhiteSmoke" VerticalOptions="FillAndExpand"/>
+            </Frame>
+            <ScrollView>
             <StackLayout Spacing="10" >
                 <StackLayout Padding="40,80,40,20" >
                     <Image Source="logo.png" Scale="1.73"/>
@@ -36,5 +41,6 @@
                 </StackLayout>
             </StackLayout>
         </ScrollView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

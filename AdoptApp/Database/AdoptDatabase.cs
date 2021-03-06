@@ -1,13 +1,9 @@
-﻿using SQLite;
-using Xamarin.Forms;
-using SQLite.Net;
+﻿using AdoptApp.Models;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using AdoptApp.Models;
-using SQLiteConnection = SQLite.Net.SQLiteConnection;
 
 namespace AdoptApp.Database
 {
@@ -60,9 +56,10 @@ namespace AdoptApp.Database
             return Database.Table<Login>().ToListAsync();
         }
 
-        public Login GetLogin(string userName)
+        public async Task<Login> GetLogin(string userName)
         {
-            return _sqlconnection.Table<Login>().FirstOrDefault(t => t.UserName == userName);
+            return await Database.Table<Login>().FirstOrDefaultAsync(x => x.UserName == userName);
+            //return _sqlconnection.Table<Login>().FirstOrDefault(t => t.UserName == userName);
         }
 
         public Task<int> SaveLogin(Login login)

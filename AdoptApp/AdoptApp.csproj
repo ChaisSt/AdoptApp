@@ -10,38 +10,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Resources\Cabin-Medium-TTF.ttf" />
-    <None Remove="Resources\Cabin-Regular-TTF.ttf" />
-    <None Remove="Resources\Cabin-SemiBold-TTF.ttf" />
-    <None Remove="Resources\GeosansLight.ttf" />
     <None Remove="Resources\Lato-Bold.ttf" />
     <None Remove="Resources\Lato-Hairline.ttf" />
     <None Remove="Resources\Lato-Light.ttf" />
     <None Remove="Resources\Lato-LightItalic.ttf" />
     <None Remove="Resources\Lato-Regular.ttf" />
-    <None Remove="Resources\RobotoCondensed-Bold.ttf" />
-    <None Remove="Resources\RobotoCondensed-Light.ttf" />
-    <None Remove="Resources\RobotoCondensed-Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Cabin-Medium-TTF.ttf" />
-    <EmbeddedResource Include="Resources\Cabin-Regular-TTF.ttf" />
-    <EmbeddedResource Include="Resources\Cabin-SemiBold-TTF.ttf" />
-    <EmbeddedResource Include="Resources\GeosansLight.ttf" />
     <EmbeddedResource Include="Resources\Lato-Bold.ttf" />
     <EmbeddedResource Include="Resources\Lato-Hairline.ttf" />
     <EmbeddedResource Include="Resources\Lato-Light.ttf" />
     <EmbeddedResource Include="Resources\Lato-LightItalic.ttf" />
     <EmbeddedResource Include="Resources\Lato-Regular.ttf" />
-    <EmbeddedResource Include="Resources\RobotoCondensed-Bold.ttf" />
-    <EmbeddedResource Include="Resources\RobotoCondensed-Light.ttf" />
-    <EmbeddedResource Include="Resources\RobotoCondensed-Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
-    <PackageReference Include="SQLite.Net-PCL" Version="3.1.1" />
     <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
@@ -55,64 +40,49 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\Profiles\CaseWorker\ViewCases.xaml.cs">
-      <DependentUpon>ViewCases.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\Profiles\Parent\ParentProfile.xaml.cs">
-      <DependentUpon>ParentProfile.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Views\AdoptList.xaml">
+    <EmbeddedResource Update="FamNav.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\FamilyList.xaml">
+    <EmbeddedResource Update="Views\LoginList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\NewCase.xaml">
+    <EmbeddedResource Update="Views\Profiles\CaseWorker\CaseList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\NewCaseWorker.xaml">
+    <EmbeddedResource Update="Views\Profiles\Parent\AdoptList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\NewFamily.xaml">
+    <EmbeddedResource Update="Views\Profiles\Parent\FamilyList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\NewHome.xaml">
+    <EmbeddedResource Update="Views\Profiles\Parent\FamilyProfile.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Profiles\Case\NewCase.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Profiles\CaseWorker\NewCaseWorker.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Profiles\Parent\NewFamily.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Profiles\Parent\NewHome.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Profiles\Case\CaseProfile.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Profiles\CaseWorker\AddEditCase.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Profiles\CaseWorker\ViewCases.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Profiles\Case\BrowsePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Case.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Profiles\Parent\FavList.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Tools\FormContainer.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="Views\Login\SignUp.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Profiles\Parent\ParentProfile.xaml">
+    <EmbeddedResource Update="Views\Profiles\CaseWorker\WorkerList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\WorkerList.xaml">
+    <EmbeddedResource Update="Views\Profiles\CaseWorker\WorkerProfile.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\WorkerProfile.xaml">
+    <EmbeddedResource Update="WorkerNav.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

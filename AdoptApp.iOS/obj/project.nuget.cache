@@ -1,13 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "M/UVMUxvU6waJcMToepmyYltkiQpMgwIfIxlL0wQnkp5/q+mYKpeyO7+0lX1We9rOaPTw82Vo67XSfRd2LkzmQ==",
+  "dgSpecHash": "Mp2rz9rYWcG54o22QKo5444SnACBvdlcrCvJF8VGFfbljPHl9qjQUSQg/APyWpabB8e9L6WLfVi21WORGROTxg==",
   "success": true,
   "projectFilePath": "C:\\Users\\chais.strand\\Documents\\CIS293 Advanced Tech\\AdoptApp\\AdoptApp\\AdoptApp.iOS\\AdoptApp.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chais.strand\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\chais.strand\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
-    "C:\\Users\\chais.strand\\.nuget\\packages\\sqlite.net-pcl\\3.1.1\\sqlite.net-pcl.3.1.1.nupkg.sha512",
-    "C:\\Users\\chais.strand\\.nuget\\packages\\sqlite.net.core-pcl\\3.1.1\\sqlite.net.core-pcl.3.1.1.nupkg.sha512",
     "C:\\Users\\chais.strand\\.nuget\\packages\\sqlitenetextensions\\2.1.0\\sqlitenetextensions.2.1.0.nupkg.sha512",
     "C:\\Users\\chais.strand\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
     "C:\\Users\\chais.strand\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",

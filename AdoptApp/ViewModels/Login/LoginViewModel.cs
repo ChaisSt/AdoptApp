@@ -26,31 +26,33 @@ namespace AdoptApp.ViewModels
 
         public LoginViewModel()
         {
-            LoginCommand = new Command(OnLoginClicked);
             login = new Login();
             login.UserName = "";
             login.Password = "";
             login.AcctType = "";
             lblInfo = "";
+            LoginCommand = new Command(OnLoginClicked);
         }
 
         private async void OnLoginClicked(object obj)
         {
+            Routing.RegisterRoute(nameof(WorkerNav), typeof(WorkerNav));
+            Routing.RegisterRoute(nameof(FamNav), typeof(FamNav));
             AdoptDatabase adoptDB = new AdoptDatabase();
             string userName = login.UserName;
             string password = login.Password;
-            if (userName != null || userName != "" || password != null || password != "")
+            if (userName != null && userName != "" && password != null && password != "")
             {
-                Login check = adoptDB.GetLogin(userName);
+                Login check = await adoptDB.GetLogin(userName);
                 if (check.UserName == userName && check.Password == password)
                 {
                     if (check.AcctType == "Family")
                     {
-                        await Shell.Current.GoToAsync($"//{nameof(UserProfile)}");
+                        await Shell.Current.GoToAsync(nameof(FamNav));
                     }
-                    else if (login.AcctType == "Worker")
+                    else if (check.AcctType == "Worker")
                     {
-                        await Shell.Current.GoToAsync($"//{nameof(WorkerProfile)}");
+                        await Shell.Current.GoToAsync(nameof(WorkerNav));
                     }
                     else { lblInfo = "There was an error - Account type"; }
                 }

@@ -1,6 +1,5 @@
 FormsViewGroup
 ImageCircle.Forms.Plugin
-SQLite.Net.Platform.XamarinAndroid
 SQLitePCLRaw.lib.e_sqlite3.android
 Xamarin.AndroidX.Activity
 Xamarin.AndroidX.Annotation
@@ -50,6 +49,7 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Google.Android.Material
 Xamarin.Google.Guava.ListenableFuture
+Xamarin.KeyboardHelper
 androidx.versionedparcelable.versionedparcelable
 androidx.lifecycle.lifecycle-runtime
 androidx.core.core

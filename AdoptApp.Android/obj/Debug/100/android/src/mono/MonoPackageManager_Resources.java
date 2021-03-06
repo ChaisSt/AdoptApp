@@ -8,8 +8,6 @@ public class MonoPackageManager_Resources {
 		"ImageCircle.Forms.Plugin.dll",
 		"Newtonsoft.Json.dll",
 		"SQLite-net.dll",
-		"SQLite.Net.dll",
-		"SQLite.Net.Platform.XamarinAndroid.dll",
 		"SQLiteNetExtensions.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",
@@ -31,6 +29,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.Core.UI.dll",
 		"Xamarin.Android.Support.Core.Utils.dll",
 		"Xamarin.Android.Support.CursorAdapter.dll",
+		"Xamarin.Android.Support.CustomTabs.dll",
 		"Xamarin.Android.Support.CustomView.dll",
 		"Xamarin.Android.Support.DocumentFile.dll",
 		"Xamarin.Android.Support.DrawerLayout.dll",
@@ -97,6 +96,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Android.Material.dll",
 		"Xamarin.Google.Guava.ListenableFuture.dll",
+		"Xamarin.KeyboardHelper.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

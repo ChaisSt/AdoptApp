@@ -42,10 +42,6 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
-            "SQLite.Net-PCL": {
-              "target": "Package",
-              "version": "[3.1.1, )"
-            },
             "Xam.Plugins.Forms.ImageCircle": {
               "target": "Package",
               "version": "[3.0.0.5, )"
@@ -120,10 +116,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "SQLite.Net-PCL": {
-              "target": "Package",
-              "version": "[3.1.1, )"
             },
             "SQLiteNetExtensions": {
               "target": "Package",

@@ -11,9 +11,9 @@ namespace AdoptApp.ViewModels
 {
     public class WorkerListVM : INotifyPropertyChanged
     {
-        private ObservableCollection<Login> _lstWorkers { get; set; }
+        private ObservableCollection<CaseWorker> _lstWorkers { get; set; }
 
-        public ObservableCollection<Login> lstWorkers
+        public ObservableCollection<CaseWorker> lstWorkers
         {
             get { return _lstWorkers; }
             set
@@ -36,7 +36,7 @@ namespace AdoptApp.ViewModels
 
         public WorkerListVM()
         {
-            lstWorkers = new ObservableCollection<Login>();
+            lstWorkers = new ObservableCollection<CaseWorker>();
         }
 
         public void GetWorkers()
@@ -44,20 +44,20 @@ namespace AdoptApp.ViewModels
             try
             {
                 AdoptDatabase adoptDB = new AdoptDatabase();
-                var workers = adoptDB.GetLogins().Result;
+                var workers = adoptDB.GetCaseWorkers().Result;
 
                 if (workers != null && workers.Count > 0)
                 {
-                    lstWorkers = new ObservableCollection<Login>();
+                    lstWorkers = new ObservableCollection<CaseWorker>();
 
                     foreach (var worker in workers)
                     {
-                        lstWorkers.Add(new Login
+                        lstWorkers.Add(new CaseWorker
                         {
-                            LoginId = worker.LoginId,
+                            WorkerId = worker.WorkerId,
                             UserName = worker.UserName,
                             Password = worker.Password,
-                            AcctType = worker.AcctType
+                            Name = worker.Name
                         });
                     }
 

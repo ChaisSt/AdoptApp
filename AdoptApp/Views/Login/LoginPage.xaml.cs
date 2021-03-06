@@ -15,12 +15,13 @@ namespace AdoptApp.Views
     {
         public LoginPage()
         {
-            InitializeComponent();
-            this.BindingContext = new LoginViewModel();
+            try
+            {
+                InitializeComponent();
+                this.BindingContext = new LoginViewModel();
+            }
+            catch (Exception) { }
         }
-
-        public string UserName { get; internal set; }
-        public string Password { get; internal set; }
 
         private void SignUp_Clicked(object sender, EventArgs e)
         {

@@ -4,7 +4,6 @@ using System.IO;
 using System.Threading.Tasks;
 using AdoptApp.ViewModels;
 using AdoptApp.Views;
-using AdoptApp.Views.Profiles.Case;
 using Xamarin.Forms;
 
 namespace AdoptApp
@@ -16,9 +15,9 @@ namespace AdoptApp
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
-            Routing.RegisterRoute(nameof(UserProfile), typeof(UserProfile));
+
         }
-        
+
         public interface CameraInterface
         {
             Task<Stream> GetImageStreamAsync();

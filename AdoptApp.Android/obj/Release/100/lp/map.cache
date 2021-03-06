@@ -88,3 +88,7 @@ androidx.asynclayoutinflater.asynclayoutinflater
 androidx.legacy.legacy-support-core-ui
 androidx.legacy.legacy-support-v4
 androidx.browser.browser
+SQLite.Net.Platform.XamarinAndroid
+Xamarin.KeyboardHelper
+Naxam.BottomTabbedPage.Platform.Droid
+Naxam.Ittianyu.BottomNavExtension

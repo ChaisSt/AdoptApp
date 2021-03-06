@@ -63,17 +63,16 @@
         </ResourceDictionary>
     </Shell.Resources>
     
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="My Profile" Icon="user.png" Route="UserProfile" ContentTemplate="{DataTemplate local:UserProfile}"/>
-        <ShellContent Title="About" Icon="tab_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Browse" Icon="tab_feed.png" ContentTemplate="{DataTemplate local:WorkerList}" />
-        <ShellContent Title="Case" ContentTemplate="{DataTemplate local:FamilyList}" />
-        <ShellContent Title="New Case" ContentTemplate="{DataTemplate local:NewCase}"/>
-        <ShellContent Title="New Home" ContentTemplate="{DataTemplate local:NewHome}"/>
-    </FlyoutItem>
-
     <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
     </MenuItem>
+    
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" x:Name="Family" IsVisible="False">
+        <ShellContent Title="Log Out" ContentTemplate="{DataTemplate local:LoginPage}"/>
+        <ShellContent Title="Worker List" ContentTemplate="{DataTemplate local:WorkerList}"/>
+        <ShellContent Title="Login List" ContentTemplate="{DataTemplate local:LoginList}"/>
+        <ShellContent Title="Family List" ContentTemplate="{DataTemplate local:FamilyList}"/>
+    </FlyoutItem>
+
 
     <ShellContent Route="LoginPage" Shell.FlyoutBehavior="Disabled" ContentTemplate="{DataTemplate local:LoginPage}" />
 </Shell>

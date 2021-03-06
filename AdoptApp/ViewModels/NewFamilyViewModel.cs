@@ -71,10 +71,7 @@ namespace AdoptApp.ViewModels
             family.Bio = "";
             family.Interests = "";
 
-            login = new Login();
-            login.AcctType = "Family";
-            login.UserName = family.UserName;
-            login.Password = family.Password;
+            
 
             lblInfo = "";
             btnSaveFamily = new Command(SaveFamily);
@@ -83,6 +80,10 @@ namespace AdoptApp.ViewModels
 
         public void SaveFamily()
         {
+            login = new Login();
+            login.AcctType = "Family";
+            login.UserName = family.UserName;
+            login.Password = family.Password;
             try
             {
                 AdoptDatabase adoptDatabase = new AdoptDatabase();

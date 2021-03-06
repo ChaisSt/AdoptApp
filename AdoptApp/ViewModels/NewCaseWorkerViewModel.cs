@@ -47,15 +47,6 @@ namespace AdoptApp.ViewModels
         public Command btnSaveWorker { get; set; }
         public Command btnClearWorker { get; set; }
 
-        //private string caseWorkerId;
-        //private string agency;
-        //private string userName;
-        //private string password;
-        //private string email;
-        //private string name;
-        //private string city;
-        //private string state;
-
         public NewCaseWorkerViewModel()
         {
             caseWorker = new CaseWorker();
@@ -68,10 +59,6 @@ namespace AdoptApp.ViewModels
             caseWorker.City = "";
             caseWorker.State = "";
 
-            login = new Login();
-            login.AcctType = "Worker";
-            login.UserName = caseWorker.UserName;
-            login.Password = caseWorker.Password;
 
             lblInfo = "";
             btnSaveWorker = new Command(SaveCaseWorker);
@@ -80,6 +67,10 @@ namespace AdoptApp.ViewModels
 
         public void SaveCaseWorker()
         {
+            login = new Login();
+            login.AcctType = "Worker";
+            login.UserName = caseWorker.UserName;
+            login.Password = caseWorker.Password;
             try
             {
                 AdoptDatabase adoptDatabase = new AdoptDatabase();

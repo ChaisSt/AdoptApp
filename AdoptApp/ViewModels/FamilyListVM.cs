@@ -23,7 +23,6 @@ namespace AdoptApp.ViewModels
                 OnPropertyChanged();
             }
         }
-        //public Command btnNewCase { get; set; }
 
         private string _lblInfo { get; set; }
         public string lblInfo
@@ -73,59 +72,6 @@ namespace AdoptApp.ViewModels
                 lblInfo = ex.Message.ToString();
             }
         }
-
-        //async Task ExecuteLoadCasesCommand()
-        //{
-        //    IsBusy = true;
-
-        //    try
-        //    {
-        //        Cases.Clear();
-        //        var cases = await CaseDataStore.GetCasesAsync(true);
-        //        foreach (var child in cases)
-        //        {
-        //            Cases.Add(child);
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Debug.WriteLine(ex);
-        //    }
-        //    finally
-        //    {
-        //        IsBusy = false;
-        //    }
-        //}
-
-        //public void OnAppearing()
-        //{
-        //    IsBusy = true;
-        //    SelectedCase = null;
-        //}
-
-        //public Case SelectedCase
-        //{
-        //    get => _selectedCase;
-        //    set
-        //    {
-        //        SetProperty(ref _selectedCase, value);
-        //        OnCaseSelected(value);
-        //    }
-        //}
-
-        //private async void OnAddCase(object obj)
-        //{
-        //    await Shell.Current.GoToAsync(nameof(NewCaseProfile));
-        //}
-
-        //async void OnCaseSelected(Case child)
-        //{
-        //    if (child == null)
-        //        return;
-
-        //    // This will push the CaseDetailPage onto the navigation stack
-        //    await Shell.Current.GoToAsync($"{nameof(CaseDetailPage)}?{nameof(CaseDetailViewModel.CaseNum)}={child.Id}");
-        //}
 
         public event PropertyChangedEventHandler PropertyChanged;
 
